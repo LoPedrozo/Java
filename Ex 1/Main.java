@@ -14,9 +14,9 @@ public class Main {
         print("--------------------------");
 
         Scanner scanner = new Scanner(System.in);
-        int continuar = 0;
+        int next = 0;
 
-        while (continuar == 0) {
+        while (next == 0) {
             print("Choose your first number ");
             float n1 = scanner.nextFloat();
 
@@ -40,14 +40,14 @@ public class Main {
 
             }
             scanner.nextLine();
-            print("You want to continue ? [Yes/No]");
+            print("You want to continue ? [Y/N]");
             String ope = scanner.nextLine();
 
-            if (ope.equals("Yes")){
+            if (ope.equals("Y")){
                 print("--------------------------");
-            }else if (ope.equals("No")){
+            }else if (ope.equals("N")){
                 print("Operation Finished");
-                continuar = 1;
+                next = 1;
             }
 
         }

@@ -40,9 +40,9 @@ public class Main {
             print("You want to continue ? [Y/N]");
             String ope = scanner.nextLine();
 
-            if (ope.equals("Y")){
+            if (ope.equalsIgnoreCase("Y")){
                 print("--------------------------");
-            }else if (ope.equals("N")){
+            }else if (ope.equalsIgnoreCase("N")){
                 print("Operation Finished");
                 next = 1;
             }

@@ -22,20 +22,20 @@ public class Product {
     }
 
     public static Product addProduct(Scanner scanner) {
-        println("Enter the product name:");
+        print("Enter the product name: ");
         String name = scanner.nextLine();
 
-        println("Enter the product code:");
+        print("Enter the product code: ");
         int codeP = scanner.nextInt();
 
-        println("Enter the stock quantity:");
+        print("Enter the stock quantity: ");
         int stock = scanner.nextInt();
         if (stock < 0) {
             println("Invalid stock quantity! Setting to 0.");
             stock = 0;
         }
 
-        println("Enter the price:");
+        print("Enter the price: ");
         float price = scanner.nextFloat();
         scanner.nextLine();
 
